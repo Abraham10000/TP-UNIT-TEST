@@ -1,0 +1,36 @@
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.inpput {
+    margin-top: 50px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 30px black;
+    background-color: aqua;
+    margin-left: 50px;
+    height: 100%;
+}
+
+.done {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px; 
+    width: 30%;
+    border: 1px black;
+    background-color: aqua;
+    height: 100%;
+}
+
+.todoHeader {
+    margin-top: 50px;
+}
+
+.doneHeader{
+    margin-top: 130px;
+}
