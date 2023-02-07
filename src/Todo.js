@@ -29,7 +29,7 @@ function TodoList() {
           e.target.todo.value = '';
         }}
       >
-        <input type="text" name="todo" placeholder="Add a todo" />
+        <input type="text" name="todo" placeholder="Add a todo" id="add"/>
       </form>
       <h1 className='todoHeader'>Todo</h1>
       <ul>
