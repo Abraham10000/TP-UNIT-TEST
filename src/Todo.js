@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './Todo.css'
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
   const [done, setDone] = useState([]);
   const [isChecked, setIsChecked] = useState(false);
-
   function addTodo(todo) {
     setTodos([...todos, todo]);
   }
@@ -23,7 +22,7 @@ function TodoList() {
   return (
     <div className='principal'>
       <div className='head'>
-      <form className='inpput'
+      <form className='inpput' aria-label='form'
         onSubmit={e => {
           e.preventDefault();
           addTodo(e.target.todo.value);
